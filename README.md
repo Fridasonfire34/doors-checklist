@@ -147,27 +147,9 @@ Each point (`CheckItem`) can have:
 
 Answers are saved as JSON per checklist. Saved checklists are not migrated: if a point changes, it gets updated when someone edits that checklist.
 
-## Database
-
-Tables used (SQL Server, Tafco database):
-
-| Table | Contents |
-|---|---|
-| `[Assigned PanelsA]` | The doors (Panel Identifier `Door` / `2R Door`) and their status. |
-| `[Door Stage Checks]` | One row per door + stage + piece with the answers. |
-| `[Door Stage Approvals]` | Every approval / rejection (history). |
-| `[Door Measures]` | Door and frame measures. |
-| `[Door Inspection Photos]` | Door photos. |
-| `[Door Job Paperwork]` | Paperwork confirmation per job. |
-| `[Door Reorders]` | Reorders and what was erased (JSON). |
-| `[Door Specs]` | Packing list specs. |
-| `[ActivityLog]` | Action log. |
-
-Schema change scripts are in the root of `tafco-main-doors-chk` (e.g. `add-door-review.sql`, `add-door-reorders.sql`). **They're run by hand** on production by the person in charge; they're never run from the app or from automated scripts.
-
 ## Troubleshooting
 
-- **The app can't reach the server**: check that `tafco-main-doors-chk` is running (`yarn dev`) and that `API_BASE` has the right IP. Over USB, run `yarn reverse`.
+- **The app can't reach the server**: check that `server` is running (`yarn dev`) and that `API_BASE` has the right IP. Over USB, run `yarn reverse`.
 - **Red screen "Unable to load script"**: Metro isn't running (`yarn start`) or `yarn reverse` is missing.
 - **`npm install` fails**: use `yarn install`.
 - **A checklist change doesn't show up**: the points come from the server; restart or redeploy `tafco-main-doors-chk`.
