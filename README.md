@@ -84,7 +84,7 @@ A stage opens once the same piece (door / frame) has passed the stage before. Th
 
 ## Key rules
 
-- **Door completed**: when every checklist is approved **and** the door has at least one photo. It's marked `COMPLETED` in `[Assigned PanelsA]`.
+- **Door completed**: when every checklist is approved **and** the door has at least one photo. It's marked `COMPLETED` in `[table]`.
 - **Door Hanger**: not approved (a reviewer fills it in), but it stays **Waiting photos** until the door has photos. When it's saved, the app goes to the door's screen to take them. The first photo completes the door (if everything else is already approved).
 - **"allowNo" points** (e.g. *Squared on each side?*): a NO doesn't make the checklist FAILED. It's saved, and when APPROVE is pressed the foreman decides: **Approve as is** or **Send back to fix** (it becomes TO FIX, with only those points open).
 - **Any other NO**: the checklist is FAILED and is fixed with Edit.
