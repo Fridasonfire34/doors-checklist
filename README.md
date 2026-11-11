@@ -1,6 +1,6 @@
 ﻿# Doors Checklist
 
-Android app (React Native) for the quality inspection of **doors and frames**. Each door goes through several stages. Each stage has checklists to fill in, plus measures and photos, and at the end a PDF report is generated. When everything is approved, the door is marked as completed in `[Assigned PanelsA]`.
+Android app (React Native) for the quality inspection of **doors and frames**. Each door goes through several stages. Each stage has checklists to fill in, plus measures and photos, and at the end a PDF report is generated. When everything is approved, the door is marked as completed in `[tablename]`.
 
 The app has no business logic of its own: **every checklist, rule and status comes from the server** (`api-mobile/doors/*` routes).
 
