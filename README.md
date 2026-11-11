@@ -90,8 +90,7 @@ A stage opens once the same piece (door / frame) has passed the stage before. Th
 - **Any other NO**: the checklist is FAILED and is fixed with Edit.
 - **Rejection (TO FIX)**: only the marked points are open. Once they're fixed and saved, it goes back to *Waiting approval*.
 - **Reorder** (Door / Frame Molding and Door Hanger): pick the defects, approve with an ID, and print the NCM label. Everything captured for that piece in every stage is erased. The piece stays locked until its new label is scanned and "Yes, new piece" is confirmed.
-- **User 1529** (master admin): can open any stage even when it's locked, and is **never asked to type an ID**: approves directly. The list is `UNLOCK_ALL_USERS` in [src/api.ts](src/api.ts) and must match the server's (`doorStages.ts`).
-- **TEMPORARY**: user 0559 sees "Search job manually" on Scan for testing ([src/screens/ScanScreen.tsx](src/screens/ScanScreen.tsx)). Remove it when testing ends.
+- **User** (master admin): can open any stage even when it's locked, and is **never asked to type an ID**: approves directly. The list is `UNLOCK_ALL_USERS` in [src/api.ts](src/api.ts) and must match the server's (`doorStages.ts`).
 - **Activity log**: every action (save, edit, approve, reject, measures, photos, reorder, paperwork) is logged to `[ActivityLog]`. New routes must log too.
 
 ## Project structure
