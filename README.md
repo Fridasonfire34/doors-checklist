@@ -151,4 +151,4 @@ Answers are saved as JSON per checklist. Saved checklists are not migrated: if a
 - **The app can't reach the server**: check that `server` is running (`yarn dev`) and that `API_BASE` has the right IP. Over USB, run `yarn reverse`.
 - **Red screen "Unable to load script"**: Metro isn't running (`yarn start`) or `yarn reverse` is missing.
 - **`npm install` fails**: use `yarn install`.
-- **A checklist change doesn't show up**: the points come from the server; restart or redeploy `tafco-main-doors-chk`.
+- **A checklist change doesn't show up**: the points come from the server; restart or redeploy `server`.
