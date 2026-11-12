@@ -28,7 +28,7 @@ The app has no business logic of its own: **every checklist, rule and status com
 - JDK 17 and Android Studio / Android SDK
 - `adb` on the PATH
 - An Android phone or tablet (USB or wireless debugging) or an emulator
-- The `tafco-main-doors-chk` backend running (see [Server](#server-backend))
+- The `server` backend running (see [Server](#server-backend))
 
 ## Installation
 
